@@ -30,7 +30,7 @@ public class Payment {
         this.amount = amount;
     }
 
-    public Payment createPayment(Id aggregateId, ClientData clientData, Money amount) {
+    public static Payment createPayment(Id aggregateId, ClientData clientData, Money amount) {
         return new Payment(aggregateId, clientData, amount);
     }
 
